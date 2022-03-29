@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Container } from '@chakra-ui/react';
 import TopNavbar from './TopNavBar';
+import SecondNavbar from './SecondNavbar';
 
 export default function Layout({ title, children }) {
   return (
@@ -23,6 +24,7 @@ export default function Layout({ title, children }) {
         ></meta>
       </Head>
       <TopNavbar />
+      <SecondNavbar />
       <Container>{children}</Container>
     </div>
   );

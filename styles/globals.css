@@ -33,3 +33,9 @@ a {
   color: #269002;
   cursor: pointer;
 }
+
+.second-navbar {
+  background-color: #269002;
+  height: 30px;
+  color: #fff;
+}

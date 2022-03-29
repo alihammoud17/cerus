@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   Text,
+  Image,
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import React from 'react';
@@ -68,6 +69,12 @@ export default function TopNavbar() {
           </Text>
         </Button>
       </Flex>
+      <Image
+        w="100%"
+        h="351px"
+        src="images/mainImage.png"
+        alt="Cerus Products"
+      ></Image>
     </div>
   );
 }
