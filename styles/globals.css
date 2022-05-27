@@ -16,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+.logo .logo-link:hover {
+  text-decoration: none;
+}
+
 .top-links .topnav-item .topnav-link {
   text-decoration: none;
   overflow: hidden;
@@ -34,8 +38,34 @@ a {
   cursor: pointer;
 }
 
+.signin-button:hover {
+  color: #fff;
+  background-color: #269002 !important;
+  outline: none;
+}
+
 .second-navbar {
   background-color: #269002;
   height: 30px;
   color: #fff;
+}
+
+.top-filter-select:hover {
+  border-color: #269002 !important;
+  background-color: #fff;
+  color: #269002;
+}
+
+.top-filter-select:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  border-color: #269002 !important;
+  box-shadow: none !important;
+}
+
+.search-button:hover {
+  color: #269002 !important;
+  background-color: #fff !important;
+  outline: none;  
+  border-color: #269002 !important;
 }

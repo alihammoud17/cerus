@@ -1,34 +1,12 @@
-import {
-  Flex,
-  Button,
-  Link,
-  Heading,
-  List,
-  ListItem,
-  Text,
-  Image,
-} from '@chakra-ui/react';
+import { Link, List, ListItem, Image } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import React from 'react';
+import Layout from '../common/HeaderLayout';
 
 export default function TopNavbar() {
   return (
-    <div>
-      <Flex justify="space-between" align="center">
-        {/* LOGO */}
-
-        <Heading
-          alignSelf="center"
-          color="#269022"
-          fontWeight="bold"
-          fontSize="50"
-          my="0"
-          mx="25"
-        >
-          cerus
-        </Heading>
-
-        {/* Middle tabs */}
+    <>
+      <Layout title="Supplier">
         <List
           className="top-links"
           display="flex"
@@ -53,28 +31,13 @@ export default function TopNavbar() {
             </NextLink>
           </ListItem>
         </List>
-
-        {/* CTA button */}
-        <Button
-          w={100}
-          h={10}
-          borderRadius="30px"
-          backgroundColor="#fff"
-          className="signin-button"
-          mx={50}
-          py={0}
-        >
-          <Text fontWeight={600} fontSize={15}>
-            Sign In
-          </Text>
-        </Button>
-      </Flex>
+      </Layout>
       <Image
         w="100%"
-        h="351px"
+        h="100%"
         src="images/mainImage.png"
         alt="Cerus Products"
       ></Image>
-    </div>
+    </>
   );
 }

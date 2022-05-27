@@ -1,4 +1,4 @@
-import { Container, Flex, List, ListItem } from '@chakra-ui/react';
+import { List, ListItem } from '@chakra-ui/react';
 
 export default function SecondNavbar() {
   return (
